@@ -8,8 +8,9 @@ class Tile
     @piece    = params.delete(:piece)
   end
 
-  def occupied?
-    !@piece.nil?
+  def occupied
+    !@piece.nil? ? @piece : nil
   end
+
 end
 
