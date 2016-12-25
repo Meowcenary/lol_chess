@@ -12,5 +12,9 @@ class Piece
     @color = params.delete(:color)
     @rank  = params.delete(:rank)
   end
+
+  def piece_notation
+    color + rank
+  end
 end
 
